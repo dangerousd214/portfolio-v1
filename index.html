@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href=script.js>
         <title>Darren Watson's Portfolio</title>
     </head>
 <!-- top of page with attenion grabbing photo and general info -->
     <header>
+          <!-- nav bar to be relocated to top of page in the center  -->
+          <nav>
+                <a href="#project">Projects</a>
+                <a href="#contact">Contact</a>
+        </nav>
         <h1>Full Stack Web Developer</h1>
         <img id="isak" src="https://www.breckcreate.org/wp-content/uploads/2019/07/Isak-02-01-1024x683.jpg" alt="Isak Stoneheart the troll">
     </header>
-
+    <br>
+    <br>
     <body>
-        <!-- nav bar to be relocated to top of page in the center  -->
-        <nav>
-            <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+      
         <!-- Projects -->
-        <main>
+        <main id="project">
+            <!-- container -->
+            <div class="container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="card1">
+                    <img id='horiseon' src="https://user-images.githubusercontent.com/16748389/85058961-de2a7780-b170-11ea-9607-506f1524d142.jpeg" >
+                <div class="text">
+                    <h2>Code refractor</h2>
+                        <p>In this project I gave the existing code an update </p>
+                        <button><a href="https://dangerousd214.github.io/revivify-code/" target="_blank">Live</a></button>        
+                        <button><a href="https://github.com/dangerousd214/revivify-code/blob/main/index.html" target="_blank">Code</a></button>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img id="weather" src="https://www.timeanddate.com/scripts/weather_og.php?h1=Weather&h2=Local%20Weather%20Around%20the%20World" >
+                <div class="text">
+                    <h2>Weather app</h2>
+                        <p>This is an app that lets you get weather data.</p>
+                        <button><a href="#">Live Site</a></button>
+                        <button>Code</button>
+                </div>
+            </div>
+    
+   
 
         </main>
     </body>
+    <br>
+    <br>
+    <br>
     <!-- Contact page with photo of me and about me -->
-    <footer>
-
+    <footer id="contact">
+        <h2>Darren Watson</h2>
+        <aside><img src="https://avatars.githubusercontent.com/u/74877923?s=460&u=ba437e2ffced95c710f726a23b0e0c45e93319ac&v=4" id="itme">
+            <h3>Contact</h3>
+            <ul>
+                <li><button><a href="https://github.com/dangerousd214">Github</a></button></li>
+                <li><button><a href="https://www.linkedin.com/in/darren-watson-09840b200/">Linkedin</a></button></li>
+                <li><button><a href="#">email</a></button></li>
+            </ul>
+        </aside>
     </footer>
 </html>
